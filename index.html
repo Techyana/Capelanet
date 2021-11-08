@@ -9,6 +9,25 @@
     <title>Capelanet</title>
 </head>
 <body>
+
+        <div class="header">
+        <i class="fas fa-times" id="faTimes" onclick="hideMenu()"></i>
+        <i class="fas fa-bars" id="faBars" onclick="showMenu()"></i>
+        </div>
+        <div class="menu" id="menuOpt">
+            <br>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Playlists (music/videos)</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">More Content</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <br>
+            <a class="sign-up" href="#">sign up</a>
+        </div>
+
     <div class="container">
         <div class="top-section">
             
@@ -20,37 +39,18 @@
             
         </div>
 
-        <div class="cover-layer">
+        <div class="cover-layer" id="coverLayer">
 
                 <ul>
                     <div class="sticky-hearder">
-                        <i class="fas fa-times closeMenu" id="faTimesMenu" onclick="hideMenu()"></i>
                         
-                        <div class="header">
-                        <!--<i class="fas fa-times" id="faTimes" onclick="hideMenu()"></i>-->
-                        <i class="fas fa-bars" id="faBars" onclick="showMenu()"></i>
-                        </div>
-                        <br><br><br><br>
+                        <br><br>
                             <h1 class="company">capelanet</h1>
                             <p class="slogan">your media palette</p>
                         <br>
                         <div class="top-five">
                             <h4 id="headline">SA Top 5 Rappers</h4>
                         </div>
-                    </div>
-            
-                    <div class="menu" id="menuOpt">
-                        <br>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Playlists (music/videos)</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">Series</a></li>
-                            <li><a href="#">More Content</a></li>
-                            <li><a href="#">About</a></li>
-                        </ul>
-                        <br>
-                        <a class="sign-up" href="#">sign up</a>
                     </div>
                     <br>
                     <div class="link-pics">
@@ -124,5 +124,7 @@
                 </ul>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

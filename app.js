@@ -4,20 +4,18 @@ var faTimes = document.getElementById("faTimes");
 var closeMenu = document.getElementById("faTimesMenu");
 var container = document.getElementById("container");
 var menuOpt = document.getElementById("menuOpt");
+var coverLayer = document.getElementById("coverLayer");
 
 function showMenu(){
-sidebar.style.display = "block";
-//sidebar.style.left = "74.5%";
 faBars.style.display = "none";
-closeMenu.style.display = "block";
-menuOpt.style.top = "0%";
+faTimes.style.display = "block"
+menuOpt.style.top = "5%"
+coverLayer.style.overflow = "hidden"
 
 }
 function hideMenu(){
-sidebar.style.left = "100%";
 faBars.style.display = "block";
-container.style.left = "74.5%";
-closeMenu.style.display = "none";
-container.style.top = "0%";
-menuOpt.style.top = "-100%";
+faTimes.style.display = "none"
+menuOpt.style.top = "-100%"
+coverLayer.style.overflow = "scroll"
 }

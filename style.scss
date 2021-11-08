@@ -1,165 +1,183 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Neucha", cursive;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Neucha", cursive;
+  overflow-x: hidden;
 }
 
-.container{
-    max-width: 100%;
+html{
+    overflow: hidden;
+}
 
-    .top-section{
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 8vh;
+    border-bottom: solid 1px black;
+    width: 100%;
+    background: white;
+    z-index: 9000;
+
+    .fa-times {
         position: fixed;
-        overflow: hidden;
-        top: 0%;
-        width: 100%;
-        height: 10vh;
-        background: linear-gradient(180deg, #4e4d4db4 45%, #fff 100%);
-        z-index: -100;
+        top: 2%;
+        left: 2.5%;
+        font-size: 1.6rem;
+        cursor: pointer;
+        display: none;
+        outline: none;
+        z-index: 10;
     }
 
-    .mid-section{
+    .fa-bars {
         position: fixed;
-        overflow: hidden;
-        top: 20%;
-        width: 100%;
-        height: 60vh;
-        text-align: center;
-        z-index: -100;
-        
-        img{
-            max-width: 60%;
-            z-index: -1;
-        }
+        top: 2%;
+        left: 90%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: block;
+        outline: none;
+        z-index: 10;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: -100%;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+    width: 91.6%;
+    height: 60%;
+    margin: 0 1rem;
+    z-index: 10;
+    background: linear-gradient(
+      180deg,
+      rgb(212, 149, 40) 10%,
+      rgb(255, 255, 255) 65%
+    );
+    border-radius: 0.4rem;
+
+    li{
+        margin: 1rem 0;
     }
 
-    .bottom-section{
-        position: fixed;
-        overflow: hidden;
-        top: 80%;
-        width: 100%;
-        height: 20vh;
-        background: linear-gradient(180deg, #fff 25%, #4e4d4db4 70%);
+    a {
+      color: black;
+      font-size: 1.5rem;
     }
 
-    .cover-layer{
-        overflow-y: scroll;
-        scroll-behavior: smooth;
-        top: 0%;
-        margin: .5rem;
-        padding: .5rem;
-        border-radius: .5rem;
-        width: 96%;
-        height: 98vh;
-        background: linear-gradient(180deg,  #fff 15%, #11030321 80%);
-        backdrop-filter: blur(2px);
-
-        .header{
-            position: fixed;
-            top: 0%;
-            left: 0%;
-            height: 8vh;
-            width: 100%;
-            background: white;
-            z-index: 1000;
-        }
-
-        img{
-            max-width: 100%;
-            border-radius: 5%;    
-        }
-
-        .center-img{
-            width: 100%;
-            text-align: center;
-        }
-
-        .sticky-hearder{
-            width: 100%;
-            text-align: center;
-
-        .fa-times {
-            position: fixed;
-            top: 1%;
-            left: 2.5%;
-            font-size: 1.6rem;
-            cursor: pointer;
-            display: none;
-            outline: none;
-            z-index: 10;
-        }
-        
-        .fa-bars {
-            position: fixed;
-            top: 1%;
-            left: 90%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: block;
-            outline: none;
-            z-index: 101;
-            }
-        }
-
-        .info{
-            width: 100%;
-            text-align: center;
-        }
-
-        .menu {
-            position: fixed;
-            top: -100%;
-            transition: ease-in-out .5s;
-            text-align: center;
-            width: 23%;
-            height: 60%;
-            background: linear-gradient(
-                180deg,
-                rgba(212, 149, 40, 0.9) 10%,
-                rgb(255, 255, 255) 65%
-            );
-            margin: 3.8rem .5rem;
-            border-radius: .4rem;
-    
-            a {
-                color: black;
-            }
-    
-            .sign-up {
-                background: royalblue;
-                padding: .3rem 1rem;
-                border-radius: .5rem;
-            }
-        }
-
-        .link-pics{
-            background: rgba(255, 255, 255, 0.705);
-            padding: .5rem;
-            height: 11vh;
-            width: 100%;
-            border-bottom: solid 1px black;
-            border-top: solid 1px black;
-            overflow: hidden;
-
-            ul{
-                display: flex;
-
-                li{
-                    margin: 0 .2rem;
-                }
-            }
-
-            img{
-                max-width: 100%;
-                border-radius: 50%;
-                border: solid 4px rgb(255, 174, 0);
-            }
-        }
+    .sign-up {
+      background: royalblue;
+      padding: 0.3rem 1rem;
+      border-radius: 0.5rem;
     }
+  }
+
+.container {
+  max-width: 100%;
+  overflow: hidden;
+
+  .top-section {
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(180deg, #4e4d4db4 45%, #fff 100%);
+    z-index: -100;
+  }
+
+  .mid-section {
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    z-index: -100;
+
+    img {
+      max-width: 60%;
+      z-index: -1;
+    }
+  }
+
+  .bottom-section {
+    position: fixed;
+    overflow: hidden;
+    top: 80%;
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(180deg, #fff 25%, #4e4d4db4 70%);
+    z-index: -1;
+  }
+
+  .cover-layer::-webkit-scrollbar{
+      display: none;
+  }
+
+  .cover-layer {
+    position: absolute;
+    top: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 96%;
+    height: 98vh;
+    background: linear-gradient(180deg, #fff 15%, #11030321 80%);
+    backdrop-filter: blur(2px);
+
+    img {
+      max-width: 100%;
+      border-radius: 5%;
+    }
+
+    .center-img {
+      width: 100%;
+      text-align: center;
+    }
+
+    .sticky-hearder {
+      width: 100%;
+      text-align: center;
+    }
+
+    .info {
+      width: 100%;
+      text-align: center;
+    }
+
+    .link-pics {
+      background: rgba(255, 255, 255, 0.705);
+      padding: 0.5rem;
+      height: 11vh;
+      width: 100%;
+      border-bottom: solid 1px black;
+      border-top: solid 1px black;
+      overflow: hidden;
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0 0.2rem;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 50%;
+        border: solid 4px rgb(255, 174, 0);
+      }
+    }
+  }
 }
