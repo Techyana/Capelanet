@@ -54,13 +54,17 @@ html {
   transition: ease-in-out 0.5s;
   text-align: center;
   width: 92%;
-  height: 70%;
+  height: 60%;
   margin: 0 1rem;
   padding: 1rem 0;
   z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #d49528), color-stop(65%, white));
   background: linear-gradient(180deg, #d49528 10%, white 65%);
   border-radius: 0.4rem;
+}
+
+.menu ul {
+  z-index: 100;
 }
 
 .menu li {
@@ -76,6 +80,12 @@ html {
   background: royalblue;
   padding: 0.5rem 2rem;
   border-radius: 1.5rem;
+}
+
+.menu .visual {
+  position: absolute;
+  opacity: 30%;
+  z-index: -100;
 }
 
 .container {
@@ -141,6 +151,10 @@ html {
           backdrop-filter: blur(2px);
 }
 
+.container .cover-layer .headline {
+  padding: 2px 0;
+}
+
 .container .cover-layer img {
   max-width: 100%;
   border-radius: 5%;
@@ -159,6 +173,7 @@ html {
 .container .cover-layer .info {
   width: 100%;
   text-align: center;
+  padding: 2px 0;
 }
 
 .container .cover-layer .link-pics {
