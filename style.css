@@ -27,7 +27,7 @@ html {
 
 .header .fa-times {
   position: fixed;
-  top: 0%;
+  top: 1%;
   left: 2.5%;
   font-size: 1.6rem;
   cursor: pointer;
@@ -38,7 +38,7 @@ html {
 
 .header .fa-bars {
   position: fixed;
-  top: 0%;
+  top: 1%;
   left: 90%;
   font-size: 1.5rem;
   cursor: pointer;
@@ -54,7 +54,7 @@ html {
   transition: ease-in-out 0.5s;
   text-align: center;
   width: 92%;
-  height: 80%;
+  height: 70%;
   margin: 0 1rem;
   padding: 1rem 0;
   z-index: 10;
