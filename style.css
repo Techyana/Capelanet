@@ -54,12 +54,12 @@ html {
   transition: ease-in-out 0.5s;
   text-align: center;
   width: 92%;
-  height: 60%;
+  height: 75vh;
   margin: 0 1rem;
-  padding: 1rem 0;
+  padding: 0rem 0;
   z-index: 10;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #d49528), color-stop(65%, white));
-  background: linear-gradient(180deg, #d49528 10%, white 65%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-20%, #c5a100), color-stop(65%, black));
+  background: linear-gradient(180deg, #c5a100 -20%, black 65%);
   border-radius: 0.4rem;
 }
 
@@ -69,10 +69,12 @@ html {
 
 .menu li {
   margin: 1.5rem 0;
+  padding: 0 0 .8rem 0;
+  border-bottom: rgba(255, 255, 255, 0.055) solid 0.0001rem;
 }
 
 .menu a {
-  color: black;
+  color: white;
   font-size: 1.5rem;
 }
 
