@@ -172,6 +172,10 @@ html {
   text-align: center;
 }
 
+.container .cover-layer .sticky-hearder a {
+  color: black;
+}
+
 .container .cover-layer .info {
   width: 100%;
   text-align: center;
