@@ -47,6 +47,18 @@ html {
   z-index: 10;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header .fa-bars {
+    left: 95%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 2048px) {
+  .header .fa-bars {
+    left: 97%;
+  }
+}
+
 .menu {
   position: fixed;
   top: -100%;
@@ -153,16 +165,23 @@ html {
           backdrop-filter: blur(2px);
 }
 
+@media (min-width: 768px) and (max-width: 1028px) {
+  .container .cover-layer {
+    width: 98%;
+  }
+}
+
 .container .cover-layer .headline {
   padding: 2px 0;
 }
 
 .container .cover-layer img {
   max-width: 100%;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 
 .container .cover-layer .center-img {
+  margin-top: 2rem;
   width: 100%;
   text-align: center;
 }
@@ -185,11 +204,40 @@ html {
 .container .cover-layer .link-pics {
   background: rgba(255, 255, 255, 0.705);
   padding: 0.5rem;
-  height: 11vh;
   width: 100%;
   border-bottom: solid 1px black;
   border-top: solid 1px black;
   overflow: hidden;
+}
+
+@media (min-width: 320px) and (max-width: 345px) {
+  .container .cover-layer .link-pics {
+    height: 9vh;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 380px) {
+  .container .cover-layer .link-pics {
+    height: 9.8vh;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 400px) {
+  .container .cover-layer .link-pics {
+    height: 10.5vh;
+  }
+}
+
+@media (min-width: 405) and (max-width: 430px) {
+  .container .cover-layer .link-pics {
+    height: 11.5vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .cover-layer .link-pics {
+    height: 12vh;
+  }
 }
 
 .container .cover-layer .link-pics ul {

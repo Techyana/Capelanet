@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+@import "include-media";
 
 * {
 margin: 0;
@@ -39,6 +40,12 @@ html{
         position: fixed;
         top: 1%;
         left: 90%;
+        @include media(">=tablet", "<=1024px"){
+            left: 95%;
+        }
+        @include media(">=desktop", "<=2048px"){
+            left: 97%;
+        }
         font-size: 1.5rem;
         cursor: pointer;
         display: block;
@@ -145,6 +152,9 @@ overflow: hidden;
     padding: 0.5rem;
     border-radius: 0.5rem;
     width: 96%;
+    @include media(">=tablet", "<=1028px"){
+        width: 98%;
+    }
     height: 98vh;
     background: linear-gradient(180deg, #fff 15%, #11030321 80%);
     backdrop-filter: blur(2px);
@@ -155,10 +165,11 @@ overflow: hidden;
 
     img {
     max-width: 100%;
-    border-radius: 5%;
+    border-radius: 2%;
     }
 
     .center-img {
+    margin-top: 2rem;
     width: 100%;
     text-align: center;
     }
@@ -181,8 +192,22 @@ overflow: hidden;
     .link-pics {
     background: rgba(255, 255, 255, 0.705);
     padding: 0.5rem;
-    height: 11vh;
     width: 100%;
+    @include media(">=phone", "<=345px"){
+        height: 9vh;
+    }
+    @include media(">=350px", "<=380px"){
+        height: 9.8vh;
+    }
+    @include media(">=370px", "<=400px"){
+        height: 10.5vh;
+    }
+    @include media(">=405", "<=430px"){
+        height: 11.5vh;
+    }
+    @include media(">=tablet", "<=1024px"){
+        height: 12vh;
+    }
     border-bottom: solid 1px black;
     border-top: solid 1px black;
     overflow: hidden;
