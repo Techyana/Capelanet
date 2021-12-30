@@ -60,7 +60,7 @@ html{
     transition: ease-in-out 0.5s;
     text-align: center;
     width: 92%;
-    height: 75vh;
+    height: 70vh;
     margin: 0 1rem;
     padding: 0rem 0;
     z-index: 10;
@@ -88,8 +88,8 @@ html{
 
     .sign-up {
     background: royalblue;
-    padding: 0.5rem 2rem;
-    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
     }
 
     .visual{
@@ -101,6 +101,7 @@ html{
 
 .container {
 max-width: 100%;
+height: 100vh;
 overflow: hidden;
 
 .top-section {
@@ -155,7 +156,9 @@ overflow: hidden;
     @include media(">=tablet", "<=1028px"){
         width: 98%;
     }
-    height: 98vh;
+    @include media(">=desktop", "<=2048px"){
+        width: 99%;
+    }
     background: linear-gradient(180deg, #fff 15%, #11030321 80%);
     backdrop-filter: blur(2px);
 
@@ -208,8 +211,8 @@ overflow: hidden;
     @include media(">=tablet", "<=1024px"){
         height: 12vh;
     }
-    border-bottom: solid 1px black;
-    border-top: solid 1px black;
+    border-bottom: solid 0px black;
+    border-top: solid 0px black;
     overflow: hidden;
 
     ul {
@@ -226,5 +229,44 @@ overflow: hidden;
         border: solid 4px rgb(255, 174, 0);
     }
     }
+
+    .links {
+        background: rgba(255, 255, 255, 0);
+        padding: 0.2rem;
+        width: 100%;
+        @include media(">=phone", "<=345px"){
+            height: 9vh;
+        }
+        @include media(">=350px", "<=380px"){
+            height: 9.8vh;
+        }
+        @include media(">=370px", "<=400px"){
+            height: 10.5vh;
+        }
+        @include media(">=405", "<=430px"){
+            height: 11.5vh;
+        }
+        @include media(">=tablet", "<=1024px"){
+            height: 12vh;
+        }
+        border-bottom: solid 0px black;
+        border-top: solid 0px black;
+        overflow: hidden;
+    
+        ul {
+            display: flex;
+    
+            li {
+            margin: 0.5rem 0.5rem;
+            padding: .2rem;
+            }
+        }
+    
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        }
+    
 }
 }
