@@ -187,8 +187,9 @@ overflow: hidden;
 
     img {
         border-radius: 50%;
-        border: solid 0.8rem rgba(100, 133, 240, 0.274);
-        opacity: 20%;
+        border: solid 0.8rem rgba(255, 255, 255, 0.274);
+        opacity: 40%;
+        margin-top: 0rem;
         @include media(">=tablet", "<=810px"){
             width: 50%;
         }
