@@ -5,6 +5,9 @@ var closeMenu = document.getElementById("faTimesMenu");
 var container = document.getElementById("container");
 var menuOpt = document.getElementById("menuOpt");
 var coverLayer = document.getElementById("coverLayer");
+var arrowBack = document.getElementById("arrowBack");
+var popWindow = document.getElementById("popWindow");
+var footerTray = document.getElementById("footerTray");
 
 function showMenu(){
 faBars.style.display = "none";
@@ -18,4 +21,12 @@ faBars.style.display = "block";
 faTimes.style.display = "none"
 menuOpt.style.top = "-100%"
 coverLayer.style.overflow = "scroll"
+}
+function showOpt(){
+    popWindow.style.top = "10%";
+    footerTray.style.top = "68.5%";
+}
+function closeOpt(){
+    popWindow.style.top = "-100%";
+    footerTray.style.top = "-100%";
 }
